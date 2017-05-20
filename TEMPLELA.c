@@ -7,14 +7,14 @@ int main() {
 	scanf("%d",&n);
 	while(n--){
 	    scanf("%d",&l);
+    	int a[l]={0};
+	    for(i=0;i<l;i++){
+    	    scanf("%d",&a[i]);
+    	}
 	   	if(l%2==0){
 	   	    printf("no\n");
 	   	}
 	   	else{
-    	   	int a[l]={0};
-    	    for(i=0;i<l;i++){
-    	        scanf("%d",&a[i]);
-    	    }
     	    if(a[0]==1){
         	    c=0;
         	    for(i=0;i<l/2;i++){
@@ -34,8 +34,9 @@ int main() {
         	        printf("no\n");
         	    }
     	    }
-    	    else
+    	    else{
     	        printf("no\n");
+	   	    }
 	   	}
 	}
 	return 0;
